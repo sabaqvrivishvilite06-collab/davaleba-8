@@ -1,0 +1,60 @@
+body {
+    background-image: url(../images/ChatGPT\ Image\ Nov\ 20\,\ 2025\,\ 08_55_55\ PM.png);
+    background-repeat: no-repeat;
+    background-size: 1800px 900px;
+    background-position:top;
+    /* position: relative; */
+    height: 900px;
+    max-width: 1800px;
+    width:100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.car {
+    /* position: absolute; */
+    width: 250px;
+    height: 250px;    
+    /* top:  530px;
+    left: 380px; */
+    transform: translate(380px, 530px);
+    animation: movecar 15s infinite;
+}
+@keyframes movecar {
+    0% { transform:translateX(380px) ; }
+    75% { transform:translateX(1500px) ; }
+    90% { transform:translateX(2000px) ; }
+    100% { transform:translateX(2500px); }
+}
+
+.people {
+    position: absolute;
+    width: 200px;
+    height: 200px;    
+    top:  600px;
+    right: 450px;
+    animation: movepeople 15s infinite;
+}
+@keyframes movepeople {
+    0% { top: 550px; right: 185px ; }
+    25% { top: 500px ; right: 250px ;}
+    50% { top: 450px ; right:300px ; }
+    100% { top:400px ; right: 350px;}
+   
+}
+
+.sun {
+    position: absolute;
+    width: 150px;
+    height: 150px;    
+    top:  10px;
+    right: 670px;
+    animation: movesun 15s infinite;
+}
+
+@keyframes movesun {
+    0% { top: 10px; right: 670px ; }
+    25% { top: 15px ; right: 650px ;}
+    50% { top: 10px ; right:670px ; }
+    75% { top:15px ; right: 650px;}
+    100% { top:10px ; right: 670px;}
+}
